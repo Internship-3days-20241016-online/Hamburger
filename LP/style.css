@@ -243,6 +243,35 @@ textarea {
 .form-sendbutton:hover {
   background-color: #ffbf1f;
 }
+z
+.faq {
+  flex-direction: row;
+  color: #616161;
+}
+
+.faq .faqContainer {
+  padding: 0 20px;
+}
+
+.faq .questionAndAnswer {
+  font-size: 24px;
+  padding: 18px;
+  background-color: #fff3b8;
+  border-radius: 10px;
+}
+
+.questionAndAnswer + .questionAndAnswer {
+  margin-top: 20px;
+}
+
+.questionAndAnswer p + p {
+  margin-top: 8px;
+}
+
+.questionAndAnswer span {
+  color: rgb(238, 93, 3);
+  font-weight: bold;
+}
 
 footer {
   background-color: #ffbf1f;
