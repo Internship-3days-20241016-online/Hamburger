@@ -1,4 +1,4 @@
-# team2
+# Hamburger
 
 ## 命名規則
 
