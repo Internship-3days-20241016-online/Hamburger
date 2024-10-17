@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>chocoZAP（チョコザップ）</title>
+    <meta
+      name="description"
+      content="コンビニジム『chocoZAP』の入会ページです。"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/chocozap_logo.jpg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>chocoZAP（チョコザップ）</title>
-  <meta name="description" content="コンビニジム『chocoZAP』の入会ページです。">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="images/chocozap_logo.jpg">
-</head>
-
-<body>
-  <header>
-    <h1 class="header_items">
-      <img src="images/chocozap0.svg" alt="chocoZAP（チョコザップ）">
-    </h1>
-  </header>
-
-  <main>
-    <section id="home" class="first-view">
-      <p class="first-view_pre-service-name">【ヘルスケアの新時代！】</p>
-      <h2 class="first-view_service-name">コンビニジム『chocoZAP』</h2>
-      <img src="images/chocozap1.png" alt="chocozapサービス" class="img">
-      <img src="images/chocozap2.png" alt="chocozap料金" class="img">
-      <div class="cta">
-        <a
-          href="https://zap-id.jp/signup?client_id=626036337451&_gl=1*mzevty*_ga*MjAxMDM4MjU0NS4xNjc3NjM0MTE5*_ga_GQCE0L4WC2*MTY3NzYzNzExOS4yLjEuMTY3NzYzNzExOS42MC4wLjA.&_ga=2.23357626.1424030137.1677634119-2010382545.1677634119&__ast_uuid=cdfd487e-66b8-4cbe-8bc2-ffc8658ec6c7&__ast_yid=cf0297c752d0d2bc&__ast_ct_3461=1677637367976#_pt_link=_s_cPbLAZwC68m6xGVAEc2x5w.0.6vJwdyqfujr4KLaqpqsdwA.1677637119765.1.2_s_29rtvsk7.dtQIlvOlD6n9LBq0FOLUig.9TylwyGQgZdg/GImWke3-g.1.2.1677637119786">
-          <img src="images/chocozap3.png" alt="ご入会はこちら" class="cta-image">
-        </a>
+  <body>
+    <header>
+      <div class="header-container">
+        <div>
+          <img class="header-img" src="images/logo.jpg" alt="ロゴ" />
+        </div>
+        <nav>
+          <ul class="header-ul">
+            <li><a href="#">チョコザップの特徴</a></li>
+            <li><a href="#">サービス詳細</a></li>
+            <li><a href="#">体験談</a></li>
+            <li><a href="#">店舗検索</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
+
+    <main>
+      <section id="home" class="first-view">
+        <p class="first-view_pre-service-name">【ヘルスケアの新時代！】</p>
+        <h2 class="first-view_service-name">コンビニジム『chocoZAP』</h2>
+        <img src="images/chocozap1.png" alt="chocozapサービス" class="img" />
+        <img src="images/chocozap2.png" alt="chocozap料金" class="img" />
+        <div class="cta">
+          <a
+            href="https://zap-id.jp/signup?client_id=626036337451&_gl=1*mzevty*_ga*MjAxMDM4MjU0NS4xNjc3NjM0MTE5*_ga_GQCE0L4WC2*MTY3NzYzNzExOS4yLjEuMTY3NzYzNzExOS42MC4wLjA.&_ga=2.23357626.1424030137.1677634119-2010382545.1677634119&__ast_uuid=cdfd487e-66b8-4cbe-8bc2-ffc8658ec6c7&__ast_yid=cf0297c752d0d2bc&__ast_ct_3461=1677637367976#_pt_link=_s_cPbLAZwC68m6xGVAEc2x5w.0.6vJwdyqfujr4KLaqpqsdwA.1677637119765.1.2_s_29rtvsk7.dtQIlvOlD6n9LBq0FOLUig.9TylwyGQgZdg/GImWke3-g.1.2.1677637119786"
+          >
+            <img
+              src="images/chocozap3.png"
+              alt="ご入会はこちら"
+              class="cta-image"
+            />
+          </a>
+        </div>
+      </section>
 
     <section id="servise" class="second-view">
-      <h2>chocoZAPのここがすごい！</h2>
-      <article>
-        <h3>24時間365日いつでも使い放題！</h3>
-        <p>
-          <img src="images/chocozap4.png" alt="コンビニジムだから通いやすい！" class="img">
-        </p>
-      </article>
-      <article>
-        <h3>セルフエステ使い放題！</h3>
-        <p>
-          <img src="images/chocozap5.png" alt="セルフエステ使い放題！" class="img">
-        </p>
-      </article>
-      <article>
-        <h3>chocoZAP特性オリジナルキットがついてくる！</h3>
-        <p>
-          <img src="images/chocozap6.png" alt="チョコザップ専用キット" class="img">
-        </p>
-      </article>
+      <div class="serviceContainer">
+        <ul class="issuesList">
+            <li>「フィットネスを始めたいけど、費用が気になる...」</li>
+            <li>「ジムに行ってみたいけど、ガチ勢しかいなくて行きにくい...」</li>
+            <li>「ジムが家の近くにない...」</li>
+            <li>「忙しくて決まった時間に通えない...」</li>
+            <li>「長期契約が必要で、気軽に始められない...」</li>
+        </ul>
+
+        <h2 class="highlightTitle">chocoZAPのここがすごい！</h2>
+
+        <div class="featureSection">
+            <h3>費用が安い！</h3>
+            <p>月額<span class="price">2,980円(税込み 3278円)</span></p>
+
+            <h3>初心者に優しい！</h3>
+            <p>ひとつひとつの器具に画面がついていて、使い方を解説しています</p>
+            <p>おもりが軽めのものから調整できる</p>
+            <p>困った場合はアプリで器具の使い方を調べられます</p>
+
+            <h3>店舗数が多い！</h3>
+            <p>チョコザップは全国<span class="highlight">1,700店舗以上</span>*を運営しています</p>
+            <p class="note">*一部、テナント規制により24時間営業ではない店舗・休館日がある店舗もございます。</p>
+
+            <h3>途中解約OK！</h3>
+            <p>入会・退会もスマホ一つで完結<br>最短翌月で解約することができるため、気軽に始めることができます</p>
+            <h3>24時間365日いつでも使い放題！</h3>
+
+            <p>コンビニジムだから通いやすい！</p>
+            <p>着替え<spam class="highlight">不要</spam>！</p>
+            <p>履き替え<spam class="highlight">不要</spam>！</p>
+            <p>入退館はQRをかざすだけ！</p>
+        </div>
+    </div>
+    
     </section>
     <section>
       <h2>chocoZAPと<br>ベストマッチなおすすめ事例</h2>
@@ -300,14 +333,56 @@
     </section>
   </main>
 
-  <footer>
-    <div class="footerContainer">
-      <p><a href="https://rizap.co.jp/about">会社概要</a></p>
-      <p><a href="https://rizap.co.jp/privacy">プライバシーポリシー</a></p>
-      <p><a href="https://chocozap.jp/_common/pdf/ec.pdf">特定商取引法</a></p>
-      <p><a href="https://chocozap.jp/_common/pdf/servicepolicy.pdf">利用規約</a></p>
-    </div>
-  </footer>
-</body>
+    <footer>
+      <div class="footer_items">
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">HOME</a>
+            </li>
+            <li>
+              <a href="#servise">サービス紹介</a>
+            </li>
+            <li>
+              <a href="#company">会社概要</a>
+            </li>
+            <li>
+              <a href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
 
+        <ul class="sns-links">
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/chocozap_official/"
+            >
+              <img src="images/instagram.svg" alt="instagram" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/chocozap_"
+            >
+              <img src="images/twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://page.line.me/847zitjn?oat__id=1218759&openQrModal=dlue"
+            >
+              <img src="images/line.svg" alt="line" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p><small>copyright &copy; chocoZAP</small></p>
+    </footer>
+  </body>
 </html>
