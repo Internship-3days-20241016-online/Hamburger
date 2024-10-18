@@ -511,6 +511,35 @@ textarea {
   background-color: #ffbf1f;
 }
 
+.customerTestimonial div {
+  display: flex;
+  align-items: baseline;
+}
+
+.customerTestimonial div img {
+  border-radius: 10px;
+  width: 90px;
+}
+
+.customerTestimonial + .customerTestimonial {
+  margin: 50px 0 0;
+}
+
+.customerTestimonial .customer {
+  margin: 0 0 0 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.customerTestimonial .voice {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ffa143;
+  border-radius: 0 12px 12px 12px;
+}
+
 .membershipLink {
   justify-content: center;
   background-color: #ffe195;
