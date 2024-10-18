@@ -111,6 +111,7 @@ article + article {
   border-right: solid 10px #ffbf1f;
   border-left: solid 10px #ffbf1f;
   border-bottom: solid 10px #ffbf1f;
+  background-color: #fffeee;
 }
 
 .first-view_pre-service-name {
@@ -218,7 +219,7 @@ article ul {
 }
 /* Second-Viewのスタイル */
 .second-view {
-  background-color: #f7f7f7;
+  background-color: #fffeee;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
@@ -293,7 +294,7 @@ article ul {
   margin-bottom: 10px;
 }
 .serviceDetail {
-  background-color: #f7f7f7;
+  background-color: #fffeee;
   padding: 60px 20px;
   text-align: center;
 }
@@ -327,8 +328,69 @@ article ul {
   font-size: 1.8rem;
   color: #616161;
 }
+/* 店舗検索セクションのスタイル */
+/* 店舗検索セクションのスタイル */
+.storeSearch {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.storeSearch h2 {
+  font-size: 4rem;
+  color: #ffbf1f;
+  margin-bottom: 20px;
+}
+
+.formButton {
+  margin-top: 20px;
+}
+
+/* 派手なボタンのスタイル */
+.searchButton {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ffbf1f, #ff6422);
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.searchButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* アニメーションの追加 */
+.searchButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-45deg);
+  transition: left 0.3s;
+}
+
+.searchButton:hover::before {
+  left: 100%;
+}
 
 /* 会社情報のスタイル */
+
+.company {
+  background-color: #fffeee;
+}
 .company dl {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -356,6 +418,7 @@ form {
   font-size: 2.3rem;
   padding: 60px;
   border: solid 5px;
+  background-color: #f7f7f7;
 }
 
 form p {
