@@ -30,6 +30,9 @@ header {
   background-color: #fff;
   width: 100%;
   position: fixed;
+  top: 0;
+  z-index: 10; /* ヘッダーを前面に表示する */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ヘッダーに影を追加して視覚的な分離感を出す */
 }
 
 .header-container {
@@ -281,6 +284,48 @@ article ul {
   font-size: 1.8rem;
   color: #777;
   margin-top: 10px;
+}
+
+/* サービスの詳細 */
+.main-image {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 10px;
+}
+.serviceDetail {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 380px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+  color: #ffbf1f;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1.8rem;
+  color: #616161;
 }
 
 /* 会社情報のスタイル */
