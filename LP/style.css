@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* グローバル設定 */
 html {
   font-size: 10px;
   /* scroll-behavior: smooth; */
@@ -24,10 +25,14 @@ body {
   font-family: "遊ゴシック", "Yu Gothic", YuGothic, sans-serif;
 }
 
+/* ヘッダーのスタイル */
 header {
   background-color: #fff;
   width: 100%;
   position: fixed;
+  top: 0;
+  z-index: 10; /* ヘッダーを前面に表示する */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ヘッダーに影を追加して視覚的な分離感を出す */
 }
 
 .header-container {
@@ -68,13 +73,18 @@ h1 img {
   width: 100%;
 }
 
+/* セクション設定 */
 section {
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+main {
+  padding-top: 96px; /* ヘッダーの高さ分の余白を追加 */
+}
 
+/* リストスタイル */
 .case-list {
   counter-reset: case;
   font-size: 3rem;
@@ -95,6 +105,8 @@ section {
 article + article {
   padding-top: 80px;
 }
+
+/* ファーストビュー設定 */
 .first-view {
   border-right: solid 10px #ffbf1f;
   border-left: solid 10px #ffbf1f;
@@ -112,19 +124,70 @@ article + article {
   text-align: center;
 }
 
-.img {
+/* 画像を重ねて配置 */
+.images-container {
+  position: relative;
   width: 800px;
-}
-
-.cta {
-  margin-top: 40px;
+  height: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-}
-.cta a {
-  display: block;
+  align-items: center;
 }
 
+/* 各画像のスタイル */
+.img {
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+/* 画像の重なり具合を調整 */
+.img1 {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.img2 {
+  left: 50%;
+  transform: translate(-50%, 450px); /* img1の下に少し被るように調整 */
+  opacity: 0.9;
+}
+
+.images-container:hover .img2 {
+  transform: translate(-50%, 450px) scale(1.1);
+}
+
+/* CTAボタンのスタイル */
+.cta {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.cta a {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #ffbf1f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.cta a:hover {
+  background-color: #e6a91f;
+}
+
+/* 見出しの設定 */
 h2 {
   font-size: 6rem;
   margin-bottom: 40px;
@@ -135,7 +198,6 @@ h2 {
 
 h3 {
   border-bottom: solid 3px #ffbf1f;
-
   font-size: 3.6rem;
   max-width: 840px;
   width: 100%;
@@ -146,14 +208,127 @@ h3 {
   margin-top: 20px;
 }
 
-airticle ul {
+/* リスト設定 */
+article ul {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 3;
   list-style-type: disc;
   list-style-position: inside;
 }
+/* Second-Viewのスタイル */
+.second-view {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.serviceContainer {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.issuesList {
+  font-size: 2.5rem;
+  line-height: 2.5;
+  margin-bottom: 40px;
+}
+
+.issuesList > li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.issuesList > li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffbf1f;
+  font-size: 3rem;
+}
+
+.highlightTitle {
+  font-size: 5rem;
+  color: #ffbf1f;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.featureSection {
+  font-size: 2.4rem;
+  max-width: 1000px;
+  margin-bottom: 60px;
+}
+
+.featureSection h3 {
+  font-size: 3.5rem;
+  color: #ffbf1f;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 3rem;
+  color: #df0f0f;
+  font-weight: bold;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+.note {
+  font-size: 1.8rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* サービスの詳細 */
+.main-image {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 10px;
+}
+.serviceDetail {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 380px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+  color: #ffbf1f;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1.8rem;
+  color: #616161;
+}
+
+/* 会社情報のスタイル */
 .company dl {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -174,6 +349,7 @@ dt {
   background-color: #f7f7f7;
 }
 
+/* フォームのスタイル */
 form {
   max-width: 1200px;
   width: 100%;
@@ -290,6 +466,91 @@ textarea {
   border-radius: 0 12px 12px 12px;
 }
 
+.customerTestimonial + .customerTestimonial {
+  margin: 50px 0 0;
+}
+
+.customerTestimonial .customer {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.customerTestimonial .voice {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ffa143;
+  border-radius: 0 12px 12px 12px;
+}
+
+.membershipLink {
+  justify-content: center;
+  background-color: #ffe195;
+  height: 800px;
+}
+
+.membershipLink img {
+  width: 70%;
+}
+
+.membershipLink a {
+  margin: 120px 0 0;
+  display: block;
+  background-color: #ff6422;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 58px;
+  width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px 0px rgb(0, 0, 0);
+  transition: 0s;
+}
+
+.membershipLink a:hover {
+  background-color: #ff6422;
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+  opacity: 1;
+}
+
+/* faqのスタイル */
+.faq {
+  flex-direction: row;
+  color: #616161;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq .faqContainer {
+  padding: 0 20px;
+}
+
+.faq .questionAndAnswer {
+  font-size: 24px;
+  padding: 18px;
+  background-color: #fff3b8;
+  border-radius: 10px;
+}
+
+.questionAndAnswer + .questionAndAnswer {
+  margin-top: 20px;
+}
+
+.questionAndAnswer p + p {
+  margin-top: 8px;
+}
+
+.questionAndAnswer span {
+  color: rgb(238, 93, 3);
+  font-weight: bold;
+}
+
+/* フッターのスタイル */
 footer {
   background-color: #ffbf1f;
 }
@@ -303,7 +564,7 @@ footer p {
   font-size: 24px;
 }
 
-footer p + p{
+footer p + p {
   margin-top: 10px;
 }
 
