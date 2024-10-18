@@ -448,11 +448,22 @@ textarea {
   background-color: #ffbf1f;
 }
 
+.customerTestimonial div {
+  display: flex;
+  align-items: baseline;
+}
+
+.customerTestimonial div img {
+  border-radius: 10px;
+  width: 90px;
+}
+
 .customerTestimonial + .customerTestimonial {
   margin: 50px 0 0;
 }
 
 .customerTestimonial .customer {
+  margin: 0 0 0 10px;
   font-size: 28px;
   font-weight: bold;
 }
