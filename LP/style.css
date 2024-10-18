@@ -77,6 +77,9 @@ section {
   flex-direction: column;
   align-items: center;
 }
+main {
+  padding-top: 96px; /* ヘッダーの高さ分の余白を追加 */
+}
 
 /* リストスタイル */
 .case-list {
@@ -118,18 +121,67 @@ article + article {
   text-align: center;
 }
 
-.img {
+/* 画像を重ねて配置 */
+.images-container {
+  position: relative;
   width: 800px;
-}
-
-/* CTAボタンの設定 */
-.cta {
-  margin-top: 40px;
+  height: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
+/* 各画像のスタイル */
+.img {
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+/* 画像の重なり具合を調整 */
+.img1 {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.img2 {
+  left: 50%;
+  transform: translate(-50%, 450px); /* img1の下に少し被るように調整 */
+  opacity: 0.9;
+}
+
+.images-container:hover .img2 {
+  transform: translate(-50%, 450px) scale(1.1);
+}
+
+/* CTAボタンのスタイル */
+.cta {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
 .cta a {
-  display: block;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #ffbf1f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.cta a:hover {
+  background-color: #e6a91f;
 }
 
 /* 見出しの設定 */
@@ -350,8 +402,7 @@ textarea {
 .form-sendbutton:hover {
   background-color: #ffbf1f;
 }
-z
-.faq {
+z .faq {
   flex-direction: row;
   color: #616161;
 }
@@ -394,7 +445,7 @@ footer p {
   font-size: 24px;
 }
 
-footer p + p{
+footer p + p {
   margin-top: 10px;
 }
 
