@@ -402,9 +402,47 @@ textarea {
 .form-sendbutton:hover {
   background-color: #ffbf1f;
 }
-z .faq {
+
+.membershipLink {
+  justify-content: center;
+  background-color: #ffe195;
+  height: 800px;
+}
+
+.membershipLink img {
+  width: 70%;
+}
+
+.membershipLink a {
+  margin: 120px 0 0;
+  display: block;
+  background-color: #ff6422;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 58px;
+  width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px 0px rgb(0, 0, 0);
+  transition: 0s;
+}
+
+.membershipLink a:hover {
+  background-color: #ff6422;
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+  opacity: 1;
+}
+
+/* faqのスタイル */
+.faq {
   flex-direction: row;
   color: #616161;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .faq .faqContainer {
