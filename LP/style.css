@@ -3,7 +3,7 @@
 /* グローバル設定 */
 html {
   font-size: 10px;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 li {
@@ -626,4 +626,17 @@ footer p + p {
 
 .footerContainer {
   padding: 40px 60px;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f1c40f;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
 }
