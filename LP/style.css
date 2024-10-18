@@ -155,8 +155,7 @@ article + article {
   transform: translate(-50%, 450px); /* img1の下に少し被るように調整 */
   opacity: 0.9;
 }
-
-.images-container:hover .img2 {
+.img2:hover {
   transform: translate(-50%, 450px) scale(1.1);
 }
 
